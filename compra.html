@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmación de Pago</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Comic Neue', sans-serif;
+            background-color: #fff8f0;
+            color: #4a4a4a;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffedd5;
+            border-bottom: 2px solid #ffa07a;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: #ff6347;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 80vh;
+            text-align: center;
+        }
+
+        .confirmation-icon {
+            font-size: 5rem;
+            color: #ff6347;
+        }
+
+        .confirmation-message {
+            margin-top: 20px;
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        .confirmation-details {
+            margin-top: 10px;
+            font-size: 1.2rem;
+            color: #6b6b6b;
+        }
+
+        .btn-back {
+            margin-top: 30px;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            background-color: #ff6347;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-back:hover {
+            background-color: #e5533a;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #ffedd5;
+            border-top: 2px solid #ffa07a;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1><i class="fa-solid fa-paw"></i> Tienda de Peluches ʕ•́ᴥ•̀ʔ</h1>
+    </header>
+    <main>
+        <i class="fa-solid fa-check-circle confirmation-icon"></i>
+        <p class="confirmation-message">¡Pago Completado!</p>
+        <p class="confirmation-details">
+            Gracias por tu compra. Tu peluche estará en camino pronto. <br>
+            Número de pedido: <strong>#12345</strong>
+        </p>
+        <button class="btn-back" onclick="window.location.href='./index.html'">
+            Volver a la Tienda
+        </button>
+    </main>
+</body>
+
+</html>
